@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    font-family: sans-serif;
+}
+
+.flex {
+    display: flex;
+}
+
+body {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+#boardgame, #rules {
+    height: 80vh;
+    width: 80vh;
+    flex-wrap: wrap;
+    border: 1px solid black;
+}
+
+.title {
+    flex-direction: column;
+    text-align: center;
+    width: 80vh;
+    height: 120px;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+.title>div {
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.title button {
+    width: 100px;
+    height: 40px;
+    font-size: 20px;
+}
+
+#timer, #scoreboard {
+    display: inline-block;
+    width: 25%;
+    font-weight: bold;
+}
+
+#rules {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+}
+
+select {
+    width: 150px;
+    height: 75px;
+    padding-left: 40px;
+    border: 1px solid black;
+}
+
+.block {
+    border: 0.5px solid darkgrey;
+    box-sizing: border-box;
+}
+
+#startGame {
+    margin: 30px 0;
+}
+
+.chocobo {
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.none {
+    display: none;
+}
+
+.result {
+    text-align: center;
+    width: 100%;
+    margin-top: 115px;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Whack-A-Choco</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    </head>
+    <body class="flex">
+        <div class="flex title">
+            <h1>Whack Choco !</h1>
+            <div class="flex">
+                <p id="timer"></p>
+                <button id="startGame">Start</button>
+                <p id="scoreboard"></p>
+            </div>
+        </div>
+        <div id="rules" class="flex">
+            <p>Here you can set the number of boxes you want to display.</p>
+            <select id="input">
+                <option value="9">3 x 3</option>
+                <option value="16">4 x 4</option>
+                <option value="25">5 x 5</option>
+            </select>
+        </div>
+        <div id="boardgame" class="flex none"></div>
+        <div id="display" class="none"></div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
